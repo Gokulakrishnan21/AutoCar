@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+@font-face {
+  font-family: poppins;
+
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+:root {
+  --width: 100%;
+  --height: 100vh;
+}
+
+.contact-section {
+  width: var(--width);
+  background-color: darkblue;
+  padding: 2%;
+}
+
+.contact-container {
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 50px;
+  color: white;
+}
+
+.contact-header-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+.contact-header-text {
+  display: inline-block;
+}
+
+.nav-header {
+  width: 100%;
+  padding: 2%;
+}
+.nav-header > h1 {
+  display: inline-block;
+  font-size: 50px;
+}
+
+.menu {
+
+  list-style: none;
+  float: right;
+}
+.d-none {
+  display: none;
+}
+
+.menu > li {
+  display: inline-block;
+  margin: 0px 25px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu > li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu > li a:hover {
+  color: orange;
+}
+
+.m-menu {
+  position: fixed;
+  right: -55%;
+  top: 0%;
+  z-index: 100;
+  padding: 1rem;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+}
+
+.m-menu .menu,
+.m-menu section {
+  padding: 0;
+}
+.m-menu .btn-section {
+  margin-top: 2rem;
+}
+.m-menu .btn-section .close-btn {
+  width: 100%;
+  border: none;
+  position: absolute;
+  top: -2%;
+  left: 80%;
+}
+.close-btn i {
+  font-size: 1.5rem !important;
+  font-weight: normal !important;
+  color: #0c4da2;
+}
+
+.m-menu .menu {
+  width: 100%;
+  padding: 0.8rem;
+  align-items: left;
+}
+.m-menu .menu li {
+  margin: 0.8rem;
+}
+
+.m-menu .menu li a {
+  text-decoration: none;
+}
+
+.m-menu .m-btn {
+  width: 80%;
+  margin: 1rem 0 !important;
+}
+
+.m-menu .btn-language {
+  background-color: white;
+  border: 1px solid gray;
+
+  padding: 8px;
+  border-radius: 25px;
+}
+.m-menu .btn-reg {
+  background-color: #ec0b78;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 30px;
+}
+.m-menu .btn-reg a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.m-menu section {
+  padding: 0.8rem;
+  align-items: center;
+}
+
+.bg-car {
+  background-image: url(../images/img-ban.jpg);
+  background-size: 120% 120%;
+  width: 100%;
+  height: 70vh;
+  color: white;
+}
+.bg-car-font {
+  padding-top: 150px;
+  margin-left: 100px;
+}
+.bg-car .bg-car-font > h1 {
+  font-size: 60px;
+}
+
+.bg-car-font > p {
+  font-size: 20px;
+}
+
+.contact-section2 {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.top-title {
+  padding: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+.top-title > h1 {
+  font-size: 60px;
+}
+.contact-card-section {
+  text-align: top;
+  width: 95%;
+  background-color: white;
+}
+.contact-fleft {
+  float: left;
+  margin-left: 80px;
+}
+.contact-fright {
+  float: right;
+  margin-left: 10px;
+}
+.contact-fleft > h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.contact-fright > h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.contact-fright > section {
+  margin-bottom: 30px;
+}
+.contact-fright > section p {
+  font-size: 27px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  border: 1px solid rgb(238, 235, 235);
+  background-color: rgb(238, 235, 235);
+  margin-bottom: 20px;
+  width: 300px;
+  height: 50px;
+}
+textarea {
+  background-color: rgb(238, 235, 235);
+  border: 0px;
+}
+.text-btn {
+  border: 0px;
+}
+.text-btn > button {
+  border-radius: 10px;
+  background-color: orange;
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+}
+.input-container {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+.gray-input,
+.error-text {
+  display: block;
+  width: 100%;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.textarea-container {
+  width: 100%;
+}
+
+.gray-input[type="textarea"],
+textarea.gray-input {
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+}
+.map > img {
+  width: 100%;
+}
+.follow-social > h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.icon-box2 {
+  padding: 2%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 255, 0.34);
+}
+
+.subscribe-section {
+  padding: 20px 50px;
+  width: 100%;
+  background-color: orange;
+  text-align: center;
+  vertical-align: middle;
+}
+.subscribe-section > h1 {
+  font-size: 45px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+.input-btn {
+  display: inline-block;
+  margin-left: 50px;
+}
+.input-btn > input {
+  width: 400px;
+  height: 45px;
+  border-radius: 8px;
+  margin-right: 40px;
+}
+.input-btn > button {
+  width: 60px;
+  background-color: darkblue;
+  height: 40px;
+}
+.input-btn > button i {
+  color: #fff;
+}
+
+.footer {
+  background-image: url(../images/img-7.jpg);
+}
+
+.footer-container {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  width: 100%;
+}
+
+.footer-content {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  margin-left: 80px;
+  width: 35%;
+}
+.footer-content2 {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+  margin-left: 20px;
+}
+.footer-content3 {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  width: 15%;
+  margin-left: 20px;
+}
+.footer-content4 {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.footer-content > h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0px 0px 16px 0px;
+}
+
+.footer-content > p {
+  color: white;
+  line-height: 50px;
+  font-size: 20px;
+
+  width: 95%;
+}
+
+table {
+  color: white;
+
+  width: 100%;
+}
+
+th {
+  font-size: 20px;
+}
+
+.footer-table {
+  width: 50%;
+  margin: auto;
+}
+
+.footer-bottom-text {
+  padding: 20px 0px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.allrights {
+  display: inline-block;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.d-none {
+  display: none;
+}
+tr > td > a {
+  text-decoration: none;
+  color: white;
+}
+.social-icons {
+  display: inline-block;
+  margin: auto;
+}
+.icon-box {
+  padding: 5%;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 255, 0.34);
+}
+
+tr > td > a:hover {
+  color: black;
+}
+
+.footer-content2 > h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0px 0px 16px 0px;
+}
+
+.footer-content2 > p a {
+  text-decoration: none;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+  width: 95%;
+}
+.footer-content2 > p a:hover {
+  color: black;
+}
+
+.footer-content3 > p a:hover {
+  color: black;
+}
+
+.footer-content3 > h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0px 0px 16px 0px;
+}
+
+.footer-content3 > p a {
+  text-decoration: none;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+  width: 95%;
+}
+
+.footer-content4 > h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0px 0px 16px 0px;
+}
+
+.small-car-image > section img {
+  width: 65px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+@media (max-width: 1400px) {
+  .contact-fright {
+    margin-top: 100px;
+  }
+
+  .footer-content {
+    margin-bottom: 20px;
+    width: 30%;
+  }
+  .footer-content2 {
+    margin-bottom: 20px;
+    width: 30%;
+  }
+  .footer-content3 {
+    width: 20%;
+    margin-left: 20px;
+  }
+  .footer-content4 {
+    margin-left: 80px;
+  }
+  .contact-section {
+    padding: 2% 0%;
+    margin-right: 10px;
+  }
+
+  .contact-card-section {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu > li {
+    display: block;
+    margin-left: 2rem !important;
+  }
+
+  .bg-car {
+    background-size: 100% 100%;
+  }
+
+  footer {
+    overflow: hidden;
+  }
+  .footer-container {
+    margin-left: 0;
+  }
+  .footer-content {
+    width: 50%;
+    margin-left: 50px;
+  }
+  .footer-content2 {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .footer-content3 {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .footer-content4 {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .footer-table {
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+
+  .contact-card-section {
+    margin-left: 10px;
+  }
+  .contact-fleft {
+    margin-left: 5%;
+  }
+  .contact-fright {
+    margin-left: 5%;
+  }
+  .textarea-container {
+    width: 80%;
+  }
+  input {
+    width: 80% !important;
+    height: 50px;
+  }
+
+  .m-none {
+    display: none;
+  }
+
+  .d-none {
+    display: inline-block;
+    float: right;
+  }
+  .ham {
+    margin-top: 20px;
+  }
+  .contact-container {
+    font-size: 20px;
+    margin-left: 120px;
+  }
+  .nav-header > h1 {
+    margin-left: 15%;
+    font-size: 35px;
+  }
+
+  .subscribe-section > h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .input-btn {
+    margin-left: 0;
+  }
+
+  .input-btn > input {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    border-radius: 8px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .input-btn > button {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 490px) {
+  .contact-fright > section p {
+    font-size: 20px;
+  }
+  .top-title > h1 {
+    font-size: 40px;
+  }
+  .top-title > p {
+    font-size: 10px;
+  }
+
+  .bg-car {
+    background-size: 100% 100%;
+  }
+
+  .footer-table {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .input-btn > input {
+    width: 280px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  .subscribe-section {
+    padding: 20px 20px;
+  }
+  .subscribe-section > h1 {
+    font-size: 20px;
+    color: white;
+  }
+  .contact-container {
+    margin-left: 30px;
+  }
+  .bg-car-font > h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .bg-car {
+    background-size: 100% 100%;
+  }
+
+  .subscribe-section > h1 {
+    font-size: 20px;
+    color: white;
+  }
+
+  .input-btn > input {
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    margin-right: 40px;
+  }
+  .input-btn > button {
+    width: 40px;
+    height: 20px;
+  }
+
+  .m-none {
+    display: none !important;
+  }
+
+  .d-none {
+    display: block;
+  }
+
+  .contact-container {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .nav-header > h1 {
+    margin-left: 15%;
+    font-size: 35px;
+  }
+  .bg-car {
+    background-size: 150% 100%;
+  }
+  .bg-car .bg-car-font {
+    margin-right: 40px;
+    margin-left: 30px;
+  }
+  .bg-car .bg-car-font > h1 {
+    font-size: 30px;
+  }
+  .footer-content > h1 {
+    font-size: 25px;
+    color: white;
+    margin: 0px 0px 16px 0px;
+  }
+
+  .footer-content > p {
+    color: white;
+
+    font-size: 18px;
+
+    width: 100%;
+  }
+}
